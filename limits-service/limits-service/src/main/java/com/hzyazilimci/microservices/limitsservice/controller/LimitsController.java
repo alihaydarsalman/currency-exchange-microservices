@@ -23,6 +23,6 @@ public class LimitsController {
 
     @GetMapping("/limits")
     public ResponseEntity<List<Limits>> retrieveLimits(){
-        return ResponseEntity.ok(Arrays.asList(new Limits(1,100), new Limits(config.getMinimum(), config.getMaximum())));
+        return ResponseEntity.ok(Arrays.asList(new Limits(1,111), new Limits(config.getMinimum(), config.getMaximum())));
     }
 }
